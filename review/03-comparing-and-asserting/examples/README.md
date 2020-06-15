@@ -2,14 +2,14 @@
 
 ## /exercises/03-comparing-and-asserting/examples 
 
-> 6/15/2020, 8:39:14 AM 
+> 6/15/2020, 9:14:53 PM 
 
 [../README.md](../README.md)
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
 - [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
 - [/3-console-assert.js](#3-console-assertjs) - _fail_ 
-- [/4-testing-with-assert.js](#4-testing-with-assertjs) - _incomplete_ 
+- [/4-testing-with-assert.js](#4-testing-with-assertjs) - _pass_ 
 - [/extra-object-is.js](#extra-object-isjs)  
 - [/extra-strict-inequality.js](#extra-strict-inequalityjs)  
 
@@ -188,7 +188,7 @@ In the console, only failing asserts are printed.
 
 ## /4-testing-with-assert.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/examples/4-testing-with-assert.js)
 
@@ -198,17 +198,8 @@ LOG: -- examples --
 + PASS: Assertion 2
 + PASS: Assertion 3
 LOG: -- practice exercises --
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/examples/4-testing-with-assert.js:28:33)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
++ PASS: Assertion 4
++ PASS: Assertion 5
 ```
 
 ```js
@@ -239,11 +230,11 @@ console.assert(isTrue3, 'Assertion 3');
 console.log('-- practice exercises --');
 
 const comparison4 = NaN === NaN;
-const isTrue4 = comparison4 === _;
+const isTrue4 = comparison4 === false;
 console.assert(isTrue4, 'Assertion 4');
 
 const comparison5 = (typeof 4) === (typeof '4');
-const isTrue5 = comparison5 === _;
+const isTrue5 = comparison5 === false;
 console.assert(isTrue5, 'Assertion 5');
 
 ```
