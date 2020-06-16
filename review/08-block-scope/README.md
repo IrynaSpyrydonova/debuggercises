@@ -2,14 +2,14 @@
 
 ## /exercises/08-block-scope 
 
-> 6/15/2020, 8:39:14 AM 
+> 6/15/2020, 11:16:06 PM 
 
 [../README.md](../README.md)
 
 - [/1-missing-values](./1-missing-values/README.md)
-  - [/1.js](./1-missing-values/README.md#1js) - _incomplete_ 
-  - [/2.js](./1-missing-values/README.md#2js) - _incomplete_ 
-  - [/3.js](./1-missing-values/README.md#3js) - _incomplete_ 
+  - [/1.js](./1-missing-values/README.md#1js) - _pass_ 
+  - [/2.js](./1-missing-values/README.md#2js) - _pass_ 
+  - [/3.js](./1-missing-values/README.md#3js) - _pass_ 
 - [/2-missing-variables](./2-missing-variables/README.md)
   - [/1.js](./2-missing-variables/README.md#1js) - _incomplete_ 
   - [/2.js](./2-missing-variables/README.md#2js) - _incomplete_ 
