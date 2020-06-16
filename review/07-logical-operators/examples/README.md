@@ -2,11 +2,7 @@
 
 ## /exercises/07-logical-operators/examples 
 
-<<<<<<< HEAD
-> 6/15/2020, 11:16:06 PM 
-=======
-> 6/15/2020, 9:14:53 PM 
->>>>>>> a79d6b4efc23d530bdc437cd1e4ee21e0eb1790d
+> 6/16/2020, 11:49:52 AM 
 
 [../README.md](../README.md)
 

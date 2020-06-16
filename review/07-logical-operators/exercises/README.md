@@ -2,15 +2,11 @@
 
 ## /exercises/07-logical-operators/exercises 
 
-<<<<<<< HEAD
-> 6/15/2020, 11:16:06 PM 
-=======
-> 6/15/2020, 9:14:53 PM 
->>>>>>> a79d6b4efc23d530bdc437cd1e4ee21e0eb1790d
+> 6/16/2020, 11:49:52 AM 
 
 [../README.md](../README.md)
 
-- [/and.js](#andjs) - _fail_ 
+- [/and.js](#andjs) - _pass_ 
 - [/not.js](#notjs) - _pass_ 
 - [/or.js](#orjs) - _pass_ 
 - [/ternary.js](#ternaryjs) - _pass_ 
@@ -19,7 +15,7 @@
 
 ## /and.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/and.js)
 
@@ -31,7 +27,7 @@
 + PASS: Test 5
 + PASS: Test 6
 + PASS: Test 7
-- FAIL: Test 8
++ PASS: Test 8
 + PASS: Test 9
 ```
 
@@ -76,9 +72,9 @@ const _7_expect = false;
 const _7_actual = and(true, false);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = and(8);
+const _8_expect = NaN;
 const _8_actual = and(NaN, undefined);
-console.assert(_8_actual === _8_expect, 'Test 8');
+console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
 const _9_expect = 'asdf';
 const _9_actual = and(Infinity, 'asdf');

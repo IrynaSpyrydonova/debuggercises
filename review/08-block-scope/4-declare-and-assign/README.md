@@ -2,47 +2,35 @@
 
 ## /exercises/08-block-scope/4-declare-and-assign 
 
-<<<<<<< HEAD
-> 6/15/2020, 11:16:06 PM 
-=======
-> 6/15/2020, 9:14:53 PM 
->>>>>>> a79d6b4efc23d530bdc437cd1e4ee21e0eb1790d
+> 6/16/2020, 11:49:52 AM 
 
 [../README.md](../README.md)
 
-- [/1.js](#1js) - _incomplete_ 
-- [/2.js](#2js) - _incomplete_ 
-- [/3.js](#3js) - _incomplete_ 
+- [/1.js](#1js) - _pass_ 
+- [/2.js](#2js) - _pass_ 
+- [/3.js](#3js) - _pass_ 
 
 ---
 
 ## /1.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/08-block-scope/4-declare-and-assign/1.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/4-declare-and-assign/1.js:3:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
 ```
 
 ```js
 'use strict';
 
-_;
+const a = false;
 console.assert(a === false, 'Test 1');
 {
-  _;
+  let a = null;
   console.assert(a === null, 'Test 2');
 }
 console.assert(a === false, 'Test 3');
@@ -55,32 +43,25 @@ console.assert(a === false, 'Test 3');
 
 ## /2.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/08-block-scope/4-declare-and-assign/2.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/4-declare-and-assign/2.js:3:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1: x
++ PASS: Test 2: x
++ PASS: Test 3: y
++ PASS: Test 4: x
 ```
 
 ```js
 'use strict';
 
-_;
+let x = 'hi!';
 console.assert(x === 'hi!', 'Test 1: x');
 {
-  _;
-  _;
+  x = 'bye!';
+  let y = 'hi!';
 
   console.assert(x === 'bye!', 'Test 2: x');
   console.assert(y === 'hi!', 'Test 3: y');
@@ -95,36 +76,29 @@ console.assert(x === 'bye!', 'Test 4: x');
 
 ## /3.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/08-block-scope/4-declare-and-assign/3.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/4-declare-and-assign/3.js:3:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1: m
++ PASS: Test 2: m
++ PASS: Test 3: l
++ PASS: Test 4: m
 ```
 
 ```js
 'use strict';
 
-_;
+let m = 1;
 console.assert(m === 1, 'Test 1: m');
 {
-  _;
-  _;
+  m = 2;
+  let l = 3;
   console.assert(m === 2, 'Test 2: m');
   console.assert(l === 3, 'Test 3: l');
 }
-_;
+m = 4;
 console.assert(m === 4, 'Test 4: m');
 
 ```

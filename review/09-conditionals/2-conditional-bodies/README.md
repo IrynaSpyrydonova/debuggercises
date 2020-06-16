@@ -2,38 +2,32 @@
 
 ## /exercises/09-conditionals/2-conditional-bodies 
 
-<<<<<<< HEAD
-> 6/15/2020, 11:16:06 PM 
-=======
-> 6/15/2020, 9:14:53 PM 
->>>>>>> a79d6b4efc23d530bdc437cd1e4ee21e0eb1790d
+> 6/16/2020, 11:49:52 AM 
 
 [../README.md](../README.md)
 
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-function.js](#3-write-functionjs) - _incomplete_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 
 ---
 
 ## /1-write-expected.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-conditionals/2-conditional-bodies/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/2-conditional-bodies/1-write-expected.js:14:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -50,39 +44,39 @@ function mystery(a) {
 }
 
 
-const _1_expect = _;
+const _1_expect = 0;
 const _1_actual = mystery(0);
 console.assert(Object.is(_1_actual, _1_expect), 'Test 1');
 
-const _2_expect = _;
+const _2_expect = 202;
 const _2_actual = mystery(101);
 console.assert(Object.is(_2_actual, _2_expect), 'Test 2');
 
-const _3_expect = _;
+const _3_expect = 1;
 const _3_actual = mystery(true);
 console.assert(Object.is(_3_actual, _3_expect), 'Test 3');
 
-const _4_expect = _;
+const _4_expect = 2;
 const _4_actual = mystery(1);
 console.assert(Object.is(_4_actual, _4_expect), 'Test 4');
 
-const _5_expect = _;
+const _5_expect = 0;
 const _5_actual = mystery(-1);
 console.assert(Object.is(_5_actual, _5_expect), 'Test 5');
 
-const _6_expect = _;
+const _6_expect = NaN;
 const _6_actual = mystery('_6_expect');
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
-const _7_expect = _;
+const _7_expect = 18;
 const _7_actual = mystery('18');
 console.assert(Object.is(_7_actual, _7_expect), 'Test 7');
 
-const _8_expect = _;
+const _8_expect = 0;
 const _8_actual = mystery(-18);
 console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
-const _9_expect = _;
+const _9_expect = NaN;
 const _9_actual = mystery(undefined);
 console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
@@ -94,22 +88,20 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /2-write-arguments.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-conditionals/2-conditional-bodies/2-write-arguments.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/2-conditional-bodies/2-write-arguments.js:15:27)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -127,40 +119,40 @@ function mystery(a) {
 
 
 const _1_expect = 0;
-const _1_actual = mystery(_);
+const _1_actual = mystery(0);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = false;
-const _2_actual = mystery(_);
+const _2_actual = mystery(true);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 const _3_expect = '12';
-const _3_actual = mystery(_);
+const _3_actual = mystery(12);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 // there is more than one way to get '12'
 const _4_expect = '12';
-const _4_actual = mystery(_);
+const _4_actual = mystery('12');
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 const _5_expect = 'asdf';
-const _5_actual = mystery(_);
+const _5_actual = mystery('asdf');
 console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = true;
-const _6_actual = mystery(_);
+const _6_actual = mystery(false);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
 const _7_expect = '';
-const _7_actual = mystery('18');
+const _7_actual = mystery('');
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = true;
-const _8_actual = mystery();
+const _8_actual = mystery(false);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = undefined;
-const _9_actual = mystery(_);
+const _9_actual = mystery(undefined);
 console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
@@ -171,22 +163,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-function.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-conditionals/2-conditional-bodies/3-write-function.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at mystery (  ...  /exercises/09-conditionals/2-conditional-bodies/3-write-function.js:9:5)
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/2-conditional-bodies/3-write-function.js:20:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -198,11 +188,11 @@ UNCAUGHT: ReferenceError: _ is not defined
 function mystery(a, b) {
   let result = '';
   if (typeof a === typeof b) {
-    result = _;
+    result = a;
   } else if (Boolean(a) === Boolean(b)) {
-    result = _;
+    result = b;
   } else {
-    result = _;
+    result = a || b;
   }
   return result;
 }

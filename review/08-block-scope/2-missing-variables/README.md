@@ -2,38 +2,24 @@
 
 ## /exercises/08-block-scope/2-missing-variables 
 
-<<<<<<< HEAD
-> 6/15/2020, 11:16:06 PM 
-=======
-> 6/15/2020, 9:14:53 PM 
->>>>>>> a79d6b4efc23d530bdc437cd1e4ee21e0eb1790d
+> 6/16/2020, 11:49:52 AM 
 
 [../README.md](../README.md)
 
-- [/1.js](#1js) - _incomplete_ 
-- [/2.js](#2js) - _incomplete_ 
-- [/3.js](#3js) - _incomplete_ 
+- [/1.js](#1js) - _pass_ 
+- [/2.js](#2js) - _pass_ 
+- [/3.js](#3js) - _pass_ 
 
 ---
 
 ## /1.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/08-block-scope/2-missing-variables/1.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/2-missing-variables/1.js:9:16)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
 ```
 
 ```js
@@ -45,7 +31,7 @@ let b = 3;
   const a = 5;
   b = a;
 }
-console.assert(_ === 5, 'Test 1');
+console.assert(b === 5, 'Test 1');
 
 ```
 
@@ -55,22 +41,13 @@ console.assert(_ === 5, 'Test 1');
 
 ## /2.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/08-block-scope/2-missing-variables/2.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/2-missing-variables/2.js:10:16)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
 ```
 
 ```js
@@ -83,8 +60,8 @@ let y = 'hi!';
   let y = 'bye!';
 }
 x = 'bye!';
-console.assert(_ === 'hi!', 'Test 1');
-console.assert(_ === 'bye!', 'Test 2');
+console.assert(y === 'hi!', 'Test 1');
+console.assert(x === 'bye!', 'Test 2');
 
 ```
 
@@ -94,22 +71,12 @@ console.assert(_ === 'bye!', 'Test 2');
 
 ## /3.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/08-block-scope/2-missing-variables/3.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/2-missing-variables/3.js:9:16)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
 ```
 
 ```js
@@ -121,7 +88,7 @@ let m = 0;
   const m = 1;
   l = 0;
 }
-console.assert(_ === 0, 'Test 1');
+console.assert(m === 0, 'Test 1');
 
 ```
 
