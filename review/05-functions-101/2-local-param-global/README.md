@@ -2,7 +2,7 @@
 
 ## /exercises/05-functions-101/2-local-param-global 
 
-> 6/16/2020, 11:49:52 AM 
+> 6/16/2020, 9:43:38 PM 
 
 [../README.md](../README.md)
 
@@ -183,16 +183,16 @@ function jazz(parameter) {
   return `${local} ${parameter}`;
 }
 
-const jazzReturn1 = funk('hello');
-const jazz1 = jazzReturn1 === 'funky hello';
+const jazzReturn1 = jazz('hello');
+const jazz1 = jazzReturn1 === 'jazzy hello';
 console.assert(jazz1, 'Test 1: jazz');
 
-const jazzReturn2 = funk('boat');
-const jazz2 = jazzReturn2 === 'funky boat';
+const jazzReturn2 = jazz('boat');
+const jazz2 = jazzReturn2 === 'jazzy boat';
 console.assert(jazz2, 'Test 2: jazz');
 
-const jazzReturn3 = funk('tree');
-const jazz3 = jazzReturn3 === 'funky tree';
+const jazzReturn3 = jazz('tree');
+const jazz3 = jazzReturn3 === 'jazzy tree';
 console.assert(jazz3, 'Test 3: jazz');
 
 ```

@@ -2,7 +2,7 @@
 
 ## /exercises/03-comparing-and-asserting/examples 
 
-> 6/16/2020, 11:49:52 AM 
+> 6/16/2020, 9:43:38 PM 
 
 [../README.md](../README.md)
 
@@ -95,16 +95,16 @@ UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignme
 ^^^^^^^^^
 
 SyntaxError: Invalid left-hand side in assignment
-    at wrapSafe (internal/modules/cjs/loader.js:1072:16)
-    at Module._compile (internal/modules/cjs/loader.js:1122:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1054:16)
+    at Module._compile (internal/modules/cjs/loader.js:1102:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
     at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
 ```
 
 ```js

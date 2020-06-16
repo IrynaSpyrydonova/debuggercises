@@ -2,37 +2,35 @@
 
 ## /exercises/10-functions-201/1-fill-in-the-blanks 
 
-> 6/16/2020, 11:49:52 AM 
+> 6/16/2020, 9:43:38 PM 
 
 [../README.md](../README.md)
 
-- [/1-write-tests.js](#1-write-testsjs) - _incomplete_ 
-- [/2-write-tests.js](#2-write-testsjs) - _incomplete_ 
-- [/3-pass-tests.js](#3-pass-testsjs) - _incomplete_ 
-- [/4-pass-tests.js](#4-pass-testsjs) - _incomplete_ 
-- [/5-twins.js](#5-twinsjs) - _incomplete_ 
-- [/6-twins.js](#6-twinsjs) - _incomplete_ 
+- [/1-write-tests.js](#1-write-testsjs) - _pass_ 
+- [/2-write-tests.js](#2-write-testsjs) - _pass_ 
+- [/3-pass-tests.js](#3-pass-testsjs) - _pass_ 
+- [/4-pass-tests.js](#4-pass-testsjs) - _pass_ 
+- [/5-twins.js](#5-twinsjs) - _pass_ 
+- [/6-twins.js](#6-twinsjs) - _pass_ 
 
 ---
 
 ## /1-write-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/1-write-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/1-write-tests.js:23:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -58,40 +56,40 @@ function add(x, y) {
   return result;
 }
 
-const _1_expect = _;
-const _1_actual = add(_);
+const _1_expect = 14;
+const _1_actual = add(12, 2);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
-const _2_expect = _;
-const _2_actual = add(_);
+const _2_expect = 0;
+const _2_actual = add(100,-100);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = _;
-const _3_actual = add(_);
+const _3_expect = 26.47;
+const _3_actual = add(1.07, 25.4);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
-const _4_expect = _;
-const _4_actual = add(_);
+const _4_expect = Infinity;
+const _4_actual = add(Infinity, 0);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-const _5_expect = _;
-const _5_actual = add(_);
+const _5_expect = -Infinity;
+const _5_actual = add(-Infinity,0);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-const _6_expect = _;
-const _6_actual = add(_);
+const _6_expect = 3.955;
+const _6_actual = add(1.498, 2.457);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-const _7_expect = _;
-const _7_actual = add(_);
+const _7_expect = -1;
+const _7_actual = add(-0, -1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = _;
-const _8_actual = add(_);
+const _8_expect = 2.456;
+const _8_actual = add(-0, 2.456);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
-const _9_expect = _;
-const _9_actual = add(_);
+const _9_expect = -0.633;
+const _9_actual = add(1.367, -2);
 console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
@@ -102,22 +100,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js:22:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -142,40 +138,40 @@ function strictEqual(a, b) {
 }
 
 
-const _1_expect = _;
-const _1_actual = strictEqual(_);
+const _1_expect = false;
+const _1_actual = strictEqual(undefined, NaN);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
-const _2_expect = _;
-const _2_actual = strictEqual(_);
+const _2_expect = false;
+const _2_actual = strictEqual(0, null);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = _;
-const _3_actual = strictEqual(_);
+const _3_expect = false;
+const _3_actual = strictEqual(true, false);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
-const _4_expect = _;
-const _4_actual = strictEqual(_);
+const _4_expect = true;
+const _4_actual = strictEqual(true, true);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-const _5_expect = _;
-const _5_actual = strictEqual(_);
+const _5_expect = false;
+const _5_actual = strictEqual(-1, false);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-const _6_expect = _;
-const _6_actual = strictEqual(_);
+const _6_expect = true;
+const _6_actual = strictEqual(-0.0, -0);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-const _7_expect = _;
-const _7_actual = strictEqual(_);
+const _7_expect = false;
+const _7_actual = strictEqual(1, -1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = _;
-const _8_actual = strictEqual(_);
+const _8_expect = false;
+const _8_actual = strictEqual(0, false);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
-const _9_expect = _;
-const _9_actual = strictEqual(_);
+const _9_expect = true;
+const _9_actual = strictEqual(1, 1.0);
 console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
@@ -186,22 +182,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-pass-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at sameTruthiness (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js:14:18)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js:22:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -218,7 +212,7 @@ UNCAUGHT: ReferenceError: _ is not defined
 function sameTruthiness(a, b) {
   // no need to check a or b, they can be any type
 
-  const result = _;
+  const result = Boolean(a) === Boolean(b);
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;
@@ -269,22 +263,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /4-pass-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at mystery (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js:14:18)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js:22:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -301,7 +293,7 @@ UNCAUGHT: ReferenceError: _ is not defined
 function mystery(a) {
   // no need to check a , they can be any type
 
-  const result = _;
+  const result = isNaN(a);
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;
@@ -352,22 +344,19 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /5-twins.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/5-twins.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at notAndA (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/5-twins.js:16:18)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/5-twins.js:42:20)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1) 
++ PASS: Test 1 A
++ PASS: Test 1 B
++ PASS: Test 2 A
++ PASS: Test 2 B
++ PASS: Test 3 A
++ PASS: Test 3 B
++ PASS: Test 4 A
++ PASS: Test 4 B
 ```
 
 ```js
@@ -386,7 +375,7 @@ function notAndA(x, y) {
   if (typeof x !== 'boolean') { throw new TypeError(); }
   if (typeof y !== 'boolean') { throw new TypeError(); }
 
-  const result = _;
+  const result = !x && !y;
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;
@@ -402,7 +391,7 @@ function notAndB(x, y) {
   if (typeof x !== 'boolean') { throw new TypeError(); }
   if (typeof y !== 'boolean') { throw new TypeError(); }
 
-  const result = _;
+  const result = !(x || y);
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;
@@ -449,22 +438,19 @@ console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ## /6-twins.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/6-twins.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at notAndA (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/6-twins.js:16:18)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/6-twins.js:42:20)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1) 
++ PASS: Test 1 A
++ PASS: Test 1 B
++ PASS: Test 2 A
++ PASS: Test 2 B
++ PASS: Test 3 A
++ PASS: Test 3 B
++ PASS: Test 4 A
++ PASS: Test 4 B
 ```
 
 ```js
@@ -483,7 +469,7 @@ function notAndA(x, y) {
   if (typeof x !== 'boolean') { throw new TypeError(); }
   if (typeof y !== 'boolean') { throw new TypeError(); }
 
-  const result = _;
+  const result = !(x && y);
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;
@@ -499,7 +485,7 @@ function notAndB(x, y) {
   if (typeof x !== 'boolean') { throw new TypeError(); }
   if (typeof y !== 'boolean') { throw new TypeError(); }
 
-  const result = _;
+  const result = !x || !y;
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;
