@@ -2,7 +2,7 @@
 
 ## /exercises/07-logical-operators/exercises 
 
-> 6/16/2020, 9:43:38 PM 
+> 6/17/2020, 10:37:35 AM 
 
 [../README.md](../README.md)
 
@@ -256,7 +256,12 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 // write a function that behaves the same as ? :
 //  ... without using ? :
 function ternary(condition, first, second) {
-    const ternary = condition ? first : second;
+    let ternary = '';
+    if(Boolean(condition) === true){
+        ternary = first;
+    } else {
+        ternary = second;
+    }
     return ternary;
 }
 
